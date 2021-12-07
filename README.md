@@ -37,13 +37,6 @@ Although it never evolved to anything else than a prototype, here is a picture o
 
 _Click image to watch the demo_
 
-## 🏐⚙️ <ins>SAP Great Ball Contraption!
-This is an awesome project I worked on during my times at SAP! It took an unbelievable amount of time to simply put all the pieces together. The balls go around the contraption simulating the different stages at a factory. Each ball is tracked using sensors and displayed in a screen.
-
-[![Great Ball Contraption!](https://img.youtube.com/vi/teBwdyri8ic/0.jpg)](https://youtu.be/teBwdyri8ic)
-
-_Click image to watch the demo_
-
 # <ins>Favorite Books
 - Greenlights by Matthew McConaughey 
 - [Almanack of Naval Ravikant](https://www.navalmanack.com/) by Eric Jorgenson
