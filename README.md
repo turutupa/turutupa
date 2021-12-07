@@ -1,23 +1,5 @@
-## Hi there 👋
-# Alberto Delgado
+# Hi there 👋, I'm Alberto Delgado
 Computer Science Master's student at USF
-
-<!--
-**turutupa/turutupa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-<div style="max-width: 768px;">
 
 # A bit about myself
 I'm a full stack developer with a passion for coding, innovation and learning new technologies. I love building from IoT projects to beautiful applications and anything in between.
@@ -71,7 +53,3 @@ _Click image to watch the demo_
    - Clean Architecture: A Craftsman's Guide to Software Structure and Design
    - The Clean Coder: A Code of Conduct for Professional Programmers
    - Clean Agile: Back to Basics
-
-
-###### &nbsp;
-</ins></ins></ins></ins></div>
