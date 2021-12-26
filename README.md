@@ -14,7 +14,7 @@ I love building side projects in my spare time. And when I say building, I mean 
 
 - [👻💡 SpookyBulb -  _Online pong game!](https://youtu.be/lD2I0SpdFXg) Physical online pong game
 - [💦🪴 Smart Water Plant](https://youtu.be/VoK4wEUCnic) Google home controlled watering system
-- [Doubles Tournament](https://github.com/turutupa/doubles-tournament) : tournaments library focused on doubles (tennis, ping pong, padel etc..)
+- [🎾🏐 Doubles Tournament](https://github.com/turutupa/doubles-tournament) : brackets and round robin tournaments library focused on doubles (tennis, ping pong, beach volleybal, padel etc..)
 - etc..
 
 ## Favorite Books
