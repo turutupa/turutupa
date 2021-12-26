@@ -12,7 +12,7 @@ In my spare time I like to rock climb, read and play the guitar!
 ## Side projects
 I love building side projects in my spare time. And when I say building, I mean it very literally. You will see what I mean down below. These are just some of the ones I most enjoyed. 
 
-- [👻💡 SpookyBulb -  _Online pong game!](https://youtu.be/lD2I0SpdFXg) Physical online pong game
+- [👻💡 SpookyBulb](https://youtu.be/lD2I0SpdFXg) Physical online pong game
 - [💦🪴 Smart Water Plant](https://youtu.be/VoK4wEUCnic) Google home controlled watering system
 - [🎾🏐 Doubles Tournament](https://github.com/turutupa/doubles-tournament) : brackets and round robin tournaments library focused on doubles (tennis, ping pong, beach volleybal, padel etc..)
 - etc..
