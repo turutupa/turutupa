@@ -19,7 +19,7 @@ I love building side projects in my spare time. And when I say building, I mean 
 
 ## Favorite Books
 - Greenlights by Matthew McConaughey 
-- [Almanack of Naval Ravikant](https://www.navalmanack.com/) by Eric Jorgenson
+- Almanack of Naval Ravikant by Eric Jorgenson
 - Leadership Strategy and Tactics: Field Manual by Jocko Willink
 - Clean collection by Robert C. Martin
   - Clean Code: A Handbook of Agile Software Craftsmanship
