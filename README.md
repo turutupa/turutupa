@@ -1,5 +1,5 @@
 # Hi there 👋, I'm Alberto Delgado
-Computer Science Master's student at USF
+Computer Science Master's student at University of San Francisco
 
 ## Random side projects
 - [👻💡 SpookyBulb](https://youtu.be/lD2I0SpdFXg) Physical online pong game
