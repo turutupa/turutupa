@@ -3,12 +3,12 @@
 <a href="https://turutupa.github.io/turutupa/">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="./docs/poster.webp">
-    <img src="./profile-loop.gif" alt="A red electric guitar sends pulses through a neural circuit to a CRT playing Snake. Open the interactive scene.">
+    <img src="./overtone-loop.webp" alt="Overtone. A ribbon of polished metal strings folds across warm paper. Open Alberto Delgado’s sound instrument.">
   </picture>
 </a>
 
-**[Play Feedback Loop ↗](https://turutupa.github.io/turutupa/)**
+**[Play Overtone ↗](https://turutupa.github.io/turutupa/)**
 
-Pluck a string with keys 1–6, follow the pulse through the circuit, then take over the game of Snake.
+Drag to detune a pair of strings. Listen for the pulse between their notes.
 
 [Crónicas](https://cronicas.io/) · [Yames](https://yames.app/)
