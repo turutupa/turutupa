@@ -39,6 +39,10 @@ I still love learning about computer science. My favorite tools to build are the
 
 [My writing](https://dev.to/turutupa)
 
+I love a good conspiracy theory. My favorite rabbit hole is the Younger Dryas, what came after it, and the stories people tell about that stretch of time.
+
+*Did we build the pyramids, or did we find them?*
+
 </details>
 
 <details>
