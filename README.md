@@ -1,20 +1,27 @@
-# Hi there 👋, I'm Alberto Delgado
-Computer Science Master's student at University of San Francisco
+# Hi, I’m Alberto Delgado
 
-## Random side projects
-- [👻💡 SpookyBulb](https://youtu.be/lD2I0SpdFXg) Physical online pong game
-- [💦🪴 Smart Water Plant](https://youtu.be/VoK4wEUCnic) Google home controlled watering system
-- [🎾🏐 Doubles Tournament](https://github.com/turutupa/doubles-tournament) : brackets and round robin tournaments library focused on doubles (tennis, ping pong, beach volleybal, padel etc..)
-- [React Smartphone](https://turutupa.github.io/react-smartphone/) Interactive smartphone shaped container 
-- etc..
+I’m a software engineer and guitarist. I once tried to organize a doubles tournament with friends and ended up writing a scheduling library.
 
-## Favorite Books
-- Greenlights by Matthew McConaughey 
-- Almanack of Naval Ravikant by Eric Jorgenson
-- Leadership Strategy and Tactics: Field Manual by Jocko Willink
-- Clean collection by Robert C. Martin
-  - Clean Code: A Handbook of Agile Software Craftsmanship
-  - Clean Architecture: A Craftsman's Guide to Software Structure and Design
-  - The Clean Coder: A Code of Conduct for Professional Programmers
-  - Clean Agile: Back to Basics
-- Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann
+![Six guitar strings run from an electric guitar into a terminal playing Snake.](./guitar-terminal.webp)
+
+## Recent apps
+
+### Crónicas
+
+Explore Spain’s history on an interactive map. Travel from one century to the next and follow changes in politics, the economy, and culture.
+
+[Explore the map →](https://cronicas.io/)
+
+### Yames
+
+I built the metronome I wanted for guitar practice. Give it a chord progression and play along with drums, bass, and keys. When you want to work on timing, the offline coach listens for where you rush or drag.
+
+[Get Yames →](https://yames.app/) · [Source code](https://github.com/turutupa/yames)
+
+## A few more things I’ve built
+
+- **[Cosmo](https://github.com/turutupa/cosmo)** lets you pan, zoom, and search your way through a JSON or YAML graph without leaving the terminal.
+- **[gsnake](https://github.com/turutupa/gsnake)** is multiplayer Snake over SSH. Host a room, invite a friend, and see who can stay alive longest.
+- **[doubles-tournament](https://github.com/turutupa/doubles-tournament)** works out the pairings for a doubles round robin so everyone gets a turn as everyone else’s partner.
+
+I write about the decisions behind these projects, including [why I built Yames](https://dev.to/turutupa/yames-yet-another-metronome-everyone-skips-5f49) and [how I brought graphs into the terminal](https://dev.to/turutupa/meet-cosmo-a-graph-visualizer-that-lives-in-your-terminal-1p5o).
