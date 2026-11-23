@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10111a" />
+    <meta
+      name="description"
+      content="A playable guitar, a neural circuit, and a terminal game of Snake by Alberto Delgado."
+    />
+    <title>Feedback Loop · Alberto Delgado</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      if (new URLSearchParams(location.search).has('capture'))
+        document.documentElement.classList.add('capture');
+    </script>
+  </head>
+  <body>
+    <header class="mast">
+      <a class="signature" href="https://github.com/turutupa"
+        ><i aria-hidden="true"></i>Alberto Delgado</a
+      >
+      <nav aria-label="Project links">
+        <a href="https://cronicas.io/">Crónicas</a
+        ><a href="https://yames.app/">Yames</a
+        ><a href="https://github.com/turutupa" aria-label="GitHub profile"
+          >GitHub ↗</a
+        >
+      </nav>
+    </header>
+    <main>
+      <header class="intro">
+        <h1>Feedback <em>Loop</em></h1>
+        <p>
+          Pluck a string. Follow the signal through the network. There’s a game
+          on the other side.
+        </p>
+      </header>
+      <section class="instrument" aria-label="Interactive guitar and terminal">
+        <div id="stage">
+          <img
+            id="poster"
+            src="./poster.webp"
+            alt="An electric guitar wired to a retro terminal"
+            fetchpriority="high"
+          />
+          <canvas
+            id="scene"
+            aria-label="Electric guitar, neural circuit and a CRT running Snake. Use the controls below to play."
+            role="img"
+          ></canvas>
+          <span id="scene-error" role="status" hidden
+            >The live scene needs WebGL. You can still play the strings
+            below.</span
+          >
+        </div>
+        <div class="console">
+          <div class="strings">
+            <h2>Strings <span>Keys 1–6</span></h2>
+            <div class="notes" aria-label="Pluck guitar strings">
+              <button data-note="0" aria-label="Pluck low E, key 1">E₂</button>
+              <button data-note="1" aria-label="Pluck A, key 2">A₂</button>
+              <button data-note="2" aria-label="Pluck D, key 3">D₃</button>
+              <button data-note="3" aria-label="Pluck G, key 4">G₃</button>
+              <button data-note="4" aria-label="Pluck B, key 5">B₃</button>
+              <button data-note="5" aria-label="Pluck high E, key 6">E₄</button>
+            </div>
+          </div>
+          <div class="transport">
+            <button id="sound" aria-pressed="false">Sound off</button>
+            <button id="motion" aria-pressed="false">Pause motion</button>
+            <button id="game" disabled>
+              Play Snake <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </div>
+        <section class="game-panel" aria-label="Snake controls" hidden>
+          <div>
+            <strong id="score" aria-live="polite">Score 0</strong>
+            <p id="game-help" role="status">
+              Use the arrows or swipe the screen to steer.
+            </p>
+          </div>
+          <div class="directions" role="group" aria-label="Steer Snake">
+            <button data-dir="left" aria-label="Turn left">←</button
+            ><button data-dir="up" aria-label="Turn up">↑</button
+            ><button data-dir="down" aria-label="Turn down">↓</button
+            ><button data-dir="right" aria-label="Turn right">→</button>
+          </div>
+          <button id="restart" hidden>Play again</button>
+        </section>
+      </section>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
