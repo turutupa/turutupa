@@ -1,0 +1,409 @@
+@font-face {
+  font-family: Instrument Serif;
+  src: url('./fonts/instrument-serif-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: IBM Plex Mono;
+  src: url('./fonts/ibm-plex-mono.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+:root {
+  color-scheme: dark;
+  --paper: #f7ecda;
+  --muted: #b2aead;
+  --line: #3d3b44;
+  --ember: #ff805d;
+  --mint: #a9f8d8;
+  --mono: 'IBM Plex Mono', Consolas, monospace;
+  font-family: 'DM Sans', Arial, sans-serif;
+  color: var(--paper);
+  background: #10111a;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 92% 24%, #221d2a80, transparent 56%), #10111a;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--ember);
+}
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 4px;
+}
+[hidden] {
+  display: none !important;
+}
+.mast,
+main {
+  width: min(100% - clamp(32px, 8vw, 128px), 1280px);
+  margin-inline: auto;
+}
+.mast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 66px;
+  border-bottom: 1px solid var(--line);
+  gap: 16px;
+}
+.signature {
+  display: inline-flex;
+  gap: 11px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+.signature i {
+  width: 21px;
+  height: 21px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--ember) 0 2px,
+    transparent 2px 4px
+  );
+  transform: skew(-13deg);
+  clip-path: polygon(
+    0 43%,
+    18% 43%,
+    18% 22%,
+    35% 22%,
+    35% 0,
+    53% 0,
+    53% 19%,
+    71% 19%,
+    71% 38%,
+    85% 38%,
+    85% 57%,
+    100% 57%,
+    100% 100%,
+    0 100%
+  );
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 3vw, 32px);
+  font: 12px var(--mono);
+  color: var(--muted);
+}
+.intro {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 36px;
+  padding: clamp(27px, 4.6vw, 62px) 0 clamp(22px, 3.1vw, 40px);
+}
+h1 {
+  font-size: clamp(60px, 8.2vw, 114px);
+  line-height: 0.88;
+  letter-spacing: -0.078em;
+  margin: 0;
+  font-weight: 650;
+}
+h1 em {
+  font:
+    italic 1.075em/0.8 'Instrument Serif',
+    Georgia,
+    serif;
+  letter-spacing: -0.045em;
+  color: var(--ember);
+}
+.intro p {
+  max-width: 295px;
+  color: #cecbca;
+  font-size: clamp(14px, 1.3vw, 17px);
+  line-height: 1.46;
+  margin: 0 0 0.2em;
+}
+.instrument {
+  margin: 0 0 40px;
+  border: 1px solid var(--line);
+  background: #181821;
+  border-radius: 7px;
+  overflow: hidden;
+}
+#stage {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  aspect-ratio: 2.29 / 1;
+  background: #141427;
+  overflow: hidden;
+}
+#scene,
+#poster {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+#scene {
+  opacity: 0;
+  touch-action: pan-y;
+}
+#stage.ready #scene {
+  opacity: 1;
+}
+#stage.ready #poster {
+  visibility: hidden;
+}
+#stage.playing #scene {
+  touch-action: none;
+}
+#poster {
+  object-fit: cover;
+}
+#scene-error {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  background: #15141beb;
+  padding: 7px 12px;
+  color: var(--paper);
+  font-size: 13px;
+}
+.console {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px 28px;
+  padding: 18px clamp(14px, 2.3vw, 32px);
+  border-top: 1px solid var(--line);
+}
+.strings {
+  display: flex;
+  gap: clamp(12px, 2vw, 28px);
+  align-items: center;
+}
+.strings h2 {
+  font:
+    600 14px/1.5 'DM Sans',
+    Arial,
+    sans-serif;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+.strings h2 span {
+  display: block;
+  color: var(--muted);
+  font: 10px/1.3 var(--mono);
+  white-space: nowrap;
+}
+.notes,
+.transport,
+.directions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.notes button,
+.directions button,
+.transport button,
+#restart {
+  min-height: 42px;
+  border: 1px solid #514b55;
+  border-radius: 4px;
+  font: 13px var(--mono);
+}
+.notes button,
+.directions button {
+  min-width: 43px;
+  background: #25242f;
+  color: #e3ddd3;
+}
+.notes button:hover,
+.directions button:hover {
+  border-color: var(--mint);
+}
+.notes button.struck {
+  color: #121b19;
+  background: var(--mint);
+  border-color: var(--mint);
+}
+.transport {
+  gap: 8px;
+}
+.transport button,
+#restart {
+  padding: 0 13px;
+  color: #ddd7ce;
+}
+.transport button:hover,
+#restart:hover {
+  background: #312d37;
+}
+.transport #game {
+  background: var(--paper);
+  color: #17151c;
+  border-color: var(--paper);
+  font-weight: bold;
+}
+.transport #game:hover {
+  background: var(--mint);
+  border-color: var(--mint);
+}
+.transport #game span {
+  margin-left: 7px;
+}
+.game-panel {
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 14px clamp(14px, 2.3vw, 32px);
+}
+.game-panel strong {
+  font: 14px var(--mono);
+  color: var(--mint);
+}
+.game-panel p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+.game-panel #restart {
+  background: var(--mint);
+  color: #121b19;
+}
+.capture body,
+.capture main,
+.capture .instrument,
+.capture #stage {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+}
+.capture .mast,
+.capture .intro,
+.capture .console,
+.capture .game-panel {
+  display: none;
+}
+@media (max-width: 820px) {
+  .intro {
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .intro p {
+    max-width: 460px;
+  }
+  .console {
+    align-items: start;
+  }
+  .strings {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 580px) {
+  .mast,
+  main {
+    width: calc(100% - 28px);
+  }
+  .mast {
+    min-height: 56px;
+  }
+  .signature {
+    font-size: 13px;
+    gap: 6px;
+  }
+  nav {
+    font-size: 10px;
+    gap: 12px;
+  }
+  .intro {
+    padding: 31px 0 20px;
+  }
+  .intro p {
+    font-size: 14px;
+    max-width: 330px;
+  }
+  .instrument {
+    border-radius: 5px;
+  }
+  #stage {
+    aspect-ratio: 1.72 / 1;
+  }
+  .console {
+    padding: 13px;
+    gap: 15px;
+  }
+  .strings {
+    width: 100%;
+    gap: 10px;
+  }
+  .notes {
+    flex: 1;
+    gap: 4px;
+  }
+  .notes button {
+    flex: 1;
+    min-width: 0;
+    padding: 0 5px;
+  }
+  .transport {
+    width: 100%;
+    gap: 5px;
+  }
+  .transport button {
+    flex: 1;
+    font-size: 11px;
+    padding: 0 6px;
+  }
+  .game-panel {
+    padding: 13px;
+  }
+  .directions {
+    gap: 7px;
+  }
+}
+@media (max-width: 350px) {
+  h1 {
+    font-size: 51px;
+  }
+  .signature i {
+    display: none;
+  }
+  .strings {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .strings h2 span {
+    display: inline;
+    margin-left: 7px;
+  }
+}
